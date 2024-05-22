@@ -1,0 +1,11 @@
+header p {
+    color: #6c757d;
+}
+
+header time {
+    font-style: italic
+}
+
+header .Author {
+    font-weight: bold;
+}
