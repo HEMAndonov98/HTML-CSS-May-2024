@@ -58,7 +58,7 @@ h6 {
 }
 
 table {
-    width: 90vw;
+    width: 100%;
     border-collapse: collapse;
     text-align: left;
     margin: 0 auto 1.5em auto;
@@ -69,6 +69,7 @@ th,
 td {
     border: 0.1em solid #a4a2a2;
     padding-left: 0.5em;
+    word-wrap: break-word;
 }
 
 thead {
