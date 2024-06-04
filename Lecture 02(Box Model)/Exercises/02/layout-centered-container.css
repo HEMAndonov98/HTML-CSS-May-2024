@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font: 16px/1.5 Lato, Verdana, sans-serif;
+}
+
+body {
+    margin: 0.5em;
+    padding: 2em;
+    border: 2px solid lightgreen;
+}
+
+.site-content {
+    border: 1px solid blue;
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.site-content header,
+.site-content main,
+.site-content footer {
+    border: 2px solid black;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.site-content header,
+.site-content main {
+    margin-bottom: 2em;
+}
