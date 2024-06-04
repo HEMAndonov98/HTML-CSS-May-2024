@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Lato, sans-serif;
+}
+
+body {
+    padding: 2em;
+}
+
+div {
+    border: 2px dotted gray;
+    margin: 0.5em 2em 2em 2em;
+}
+
+div p {
+    padding-left: 1em;
+}
+
+.margin {
+    background: lightsalmon;
+}
+
+.border {
+    background: sandybrown;
+}
+
+.padding {
+    background: lightgreen;
+}
+
+.content {
+    background: lightblue;
+    text-align: center;
+    padding: 1em;
+}
