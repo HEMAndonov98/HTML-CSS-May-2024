@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Lato, "sans-serif";
+}
+
+body {
+    padding: 2em;
+}
+
+.container {
+    border: 2px solid #eee;
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.container details {
+    border: 1px solid black;
+    padding: 1em 1em 0 1em;
+    border-radius: 0.1em;
+}
+
+.container details>summary {
+    margin-bottom: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container details p {
+    padding-bottom: 1em;
+}
+
+.container details>summary {
+    list-style-type: square;
+}
+
+.container details summary::before {
+    display: inline-block;
+    content: '>';
+    margin-right: 0.5em;
+}
+
+.container details[open] summary:before {
+    content: '^';
+    transform: rotate(180deg);
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
