@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 16px/1.5 Lato, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    padding: 1em;
+    border: 2px solid cadetblue;
+}
+
+.site-section:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+.container {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 900px;
+    border: 2px solid blue;
+    padding: 1em;
+}
+
+.site-section {
+    border: 2px solid black;
+    padding: 2em;
+}
