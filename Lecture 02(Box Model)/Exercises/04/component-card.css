@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 16px/1.5 Lato, Verdana, sans-serif;
+}
+
+body {
+    padding: 2em;
+    background: #eee;
+}
+
+.card {
+    display: block;
+    margin: 3.5em auto;
+    text-decoration: none;
+    overflow: hidden;
+    width: 25em;
+    color: #333;
+    background: #fff;
+    padding-bottom: 0.7em;
+    border-radius: 0.3em;
+    transition: transform 0.4s;
+}
+
+.card span {
+    display: block;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card .main,
+.card .footer {
+    padding: 1em 2em;
+}
+
+.card strong {
+    display: block;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.card .footer span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card .footer span:first-child {
+    font-weight: bold;
+}
+
+.card .footer span:last-child {
+    font-style: italic;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
