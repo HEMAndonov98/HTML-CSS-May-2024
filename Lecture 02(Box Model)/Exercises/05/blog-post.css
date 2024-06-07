@@ -1,0 +1,39 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+.container article {
+    border: 2px solid #eee;
+    padding: 1rem 2rem;
+    font-family: Lato, sans-serif;
+    border-radius: 0.3em;
+}
+
+article header h2 {
+    margin-top: 0;
+}
+
+article section p:first-child {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #111;
+}
+
+.container footer time {
+    font-weight: bold;
+}
+
+article footer {
+    font-style: italic;
+}
