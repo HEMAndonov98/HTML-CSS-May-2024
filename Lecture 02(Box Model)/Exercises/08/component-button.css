@@ -36,6 +36,12 @@ section>h2 {
     box-shadow: 0 1px #999;
 }
 
+.button:focus,
+.button:hover {
+    color: #fff;
+    background: #000;
+}
+
 .button:active {
     box-shadow: 0 1px #666;
     transform: translateY(4px);
