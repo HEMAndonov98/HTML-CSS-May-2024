@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Lato, sans-serif;
+}
+
+body {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+section>h2 {
+    margin-bottom: 1em;
+}
+
+.button {
+    display: inline-block;
+    background-color: red;
+    padding: 1em;
+    border-radius: 0.2em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+    color: black;
+    font: inherit;
+    border: 1px solid #3333;
+    cursor: pointer;
+    outline: inherit;
+    box-shadow: 0 1px #999;
+}
+
+.button:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.button-gray {
+    background-color: #3333;
+}
+
+.button-orange {
+    background-color: orange;
+}
+
+.button-yellow {
+    background-color: lightyellow;
+}
+
+.button-white {
+    background-color: white;
+}
