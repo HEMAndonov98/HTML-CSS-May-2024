@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+ul>li {
+    display: inline-block;
+}
+
+ul>li:not(:last-child) {
+    margin-right: 0.5em;
+}
+
+ul>li>a {
+    display: block;
+    color: #000;
+    width: 3em;
+    aspect-ratio: 1/1;
+    font-size: 2em;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+ul li a:hover {
+    background-color: #000;
+    color: white;
+    transform: scale(1.1);
+}
