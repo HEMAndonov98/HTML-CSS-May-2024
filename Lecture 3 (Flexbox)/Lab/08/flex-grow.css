@@ -1,0 +1,32 @@
+.flex-container {
+    border: 2px solid blue;
+    width: 400px;
+    padding: 1em;
+    display: flex;
+}
+
+.flex-item {
+    padding: 1em;
+    border: 1px solid black;
+    background-color: #eee;
+}
+
+.flex-container:nth-of-type(2) .flex-item {
+    flex-grow: 1;
+}
+
+.flex-container:nth-of-type(3) .flex-item:nth-child(2) {
+    flex-grow: 1;
+}
+
+.flex-container:nth-of-type(4) .flex-item:nth-child(1) {
+    flex-grow: 1;
+}
+
+.flex-container:nth-of-type(4) .flex-item:nth-child(2) {
+    flex-grow: 2;
+}
+
+.flex-container:nth-of-type(4) .flex-item:nth-child(3) {
+    flex-grow: 3;
+}
