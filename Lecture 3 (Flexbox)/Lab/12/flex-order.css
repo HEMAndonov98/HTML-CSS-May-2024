@@ -1,0 +1,32 @@
+.flex-container {
+    border: 2px solid blue;
+    width: 400px;
+    padding: 1em;
+    display: flex;
+}
+
+.flex-item {
+    padding: 1em;
+    border: 1px solid black;
+    background-color: #eee;
+}
+
+.flex-order-container .flex-item:nth-child(3) {
+    order: -5;
+}
+
+.flex-order-container .flex-item:nth-child(5) {
+    order: -4;
+}
+
+.flex-order-container .flex-item:nth-child(2) {
+    order: -3;
+}
+
+.flex-order-container .flex-item:nth-child(6) {
+    order: -2;
+}
+
+.flex-order-container .flex-item:nth-child(1) {
+    order: -1;
+}
