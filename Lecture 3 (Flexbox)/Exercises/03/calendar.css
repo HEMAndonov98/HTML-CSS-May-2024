@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    padding: 2em;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 70vw;
+    max-width: 80vh;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    margin: 0 auto;
+    border-radius: 0.3em;
+}
+
+.calendar {
+    display: flex;
+    padding: 0.2em;
+}
+
+.calendar p {
+    border: 1px solid #ccc;
+    padding: 1em;
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+.calendar .week {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar .week .workweek,
+.calendar .week .weekend {
+    flex: 0 0 100%;
+}
+
+.calendar .side {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+}
