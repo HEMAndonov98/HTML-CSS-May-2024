@@ -10,55 +10,61 @@ html {
 
 body {
     background-color: #eee;
+    padding: 2em;
 }
 
 .site {
-    margin: 1em auto;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .site-content {
-    margin: 0 2em;
-    background-color: white;
-    padding: 1em 2em;
-    border-radius: 0.5em;
-    box-shadow: 0 1px 10px gray;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
 }
 
-hr {
-    width: 10em;
-    margin: 1em auto;
-    color: #eee;
-}
-
-.site-content header {
-    text-align: center;
-    padding-bottom: 1em;
-    max-width: 29em;
-    margin: 1em auto 1em auto;
-}
-
-.site-content footer {
-    text-align: center;
-    max-width: 50em;
-    margin: 1em auto;
-}
-
-.site-content header p,
-.site-content footer p {
-    margin-top: 1em;
-    font-style: italic;
-    color: gray;
-}
-
-.section-articles {
-    justify-content: space-evenly;
+.columns {
+    margin: 2em 0;
     display: flex;
-    flex-flow: row wrap;
-    gap: 1em;
-    padding: 2em 0;
+    flex-wrap: wrap;
+    gap: 2em;
 }
 
-.section-articles article {
-    flex-basis: 20em;
-    font-size: 1.1em;
+.columns article {
+    flex: 1 1 30%;
+}
+
+.site-content>header,
+.site-content>footer {
+    text-align: center;
+}
+
+
+.site-content>header h2 {
+    margin-bottom: 0.5em;
+}
+
+.site-content>header p {
+    max-width: 55%;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+
+.site-content>header p::after,
+.site-content>footer p::before {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 10em;
+    background-color: #ccc;
+    margin: 1em auto;
+}
+
+.site-content>footer p {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 0.9em;
+    opacity: 0.7;
 }
