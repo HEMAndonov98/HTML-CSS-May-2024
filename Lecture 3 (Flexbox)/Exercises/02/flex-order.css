@@ -36,7 +36,7 @@ section>* {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 0.3em;
-    flex: 1 1 100%;
+    flex: 0 0 100%;
 }
 
 .main-content {
@@ -44,7 +44,7 @@ section>* {
 }
 
 section>.sidebar {
-    flex: 1 1 30%;
+    flex: 1 1 auto;
 }
 
 section:nth-of-type(2)>header {
