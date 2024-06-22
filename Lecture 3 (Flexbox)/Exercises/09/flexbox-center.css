@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    height: 100vh;
+    background: #EEEEEE;
+}
+
+article {
+    max-width: 42.9em;
+    background: #FFFFFF;
+    border-radius: 0.3em;
+    padding: 2.1em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+article>* {
+    margin-bottom: 2.1rem;
+}
+
+article>h2 {
+    margin-bottom: 1.8rem;
+}
+
+article>p {
+    max-width: 37em;
+}
+
+ul>li {
+    margin-left: 2.5rem;
+}
