@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body {
+    padding: 2em;
+    background: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 2.4em;
+    max-width: 65.2em;
+    padding: 1.7em;
+    background-color: #FFFFFF;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+article p {
+    color: 656565;
+}
+
+hgroup {
+    margin-bottom: 1.4em;
+}
+
+hgroup h2 {
+    color: #7E7E7E;
+}
+
+hgroup h1 {
+    color: #323232;
+}
+
+.buttons {
+    margin-top: 1.7em;
+    display: flex;
+    flex-grow: 0 1 5.5rem;
+    gap: 1.7em;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    background: #EEEEEE;
+    color: #696969;
+    border-radius: 0.4em;
+}
+
+.buttons .checked {
+    background: #663399;
+    color: #F8F6FB;
+}
+
+.media {
+    flex: 0 0 30%;
+    background: #EEEEEE;
+    border-radius: 0.4em;
+    border: 1px solid #CCCCCC;
+}
