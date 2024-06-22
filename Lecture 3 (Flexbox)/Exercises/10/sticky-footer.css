@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    border: 5px solid green;
+    display: flex;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+}
+
+section>* {
+    padding: 2em;
+    border: 2px solid blue;
+}
+
+section main {
+    flex: 1 1 auto;
+}
