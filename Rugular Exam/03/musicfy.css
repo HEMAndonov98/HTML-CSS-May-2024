@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+html {
+    box-sizing: border-box;
+    font: 14px/1.5 "Lato", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    max-width: 1920px;
+}
+
+nav {
+    display: flex;
+    background: #000000;
+    justify-content: space-between;
+    padding-right: 1em;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+nav ul a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-icon {
+    width: 5em;
+}
+
+header {
+    background: #1DB954;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 27em;
+}
+
+header>h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-top: 5rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.card {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 0 1 30em;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    gap: 1em;
+    justify-content: flex-end;
+}
+
+.card-header {
+    padding-top: 1em;
+    font-size: 1.4em;
+    text-align: center;
+    color: #54546D;
+}
+
+.card ul {
+    padding: 2em;
+    list-style: circle;
+    margin-left: 1.5em;
+}
+
+.card ul>li {
+    margin-bottom: 0.5em;
+}
+
+.card a {
+    align-self: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #1DB954;
+    padding: 1em 2em;
+    border-radius: 5em;
+    font-weight: bold;
+
+}
+
+.card-header>h4 {
+    font-weight: bold;
+}
+
+.card-footer {
+    display: flex;
+    width: 100%;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    background: #191414;
+    color: #FFFFFF;
+    padding: 0.5em 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 29.5rem 6.9em 0 6.9em;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+}
+
+.main-content .additional-promo {
+    flex: 1 1 60%;
+}
+
+.dogo-logo {
+    flex: 0 0 30%;
+    padding-bottom: 5em;
+}
+
+.main-content>section h6 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.main-content>section ol {
+    list-style: decimal;
+}
+
+.main-content>section ol li {
+    margin-bottom: 1em;
+}
+
+.table {
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.table-container>* {
+    margin-bottom: 1em;
+}
+
+.table-container {
+    text-align: center;
+    width: 65vw;
+}
+
+.table-container h2 {
+    font-weight: bold;
+    font-size: 2.2em;
+}
+
+.table .column {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0.5em;
+}
+
+.table .column:nth-of-type(odd) {
+    background: #CCCBCB;
+}
+
+.table .column:nth-of-type(even) {
+    background: #81D8A0;
+}
+
+.table>.column>p {
+    flex: 1 1 50%;
+    text-align: left;
+}
+
+.table>.column .inner {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background: #191414;
+    color: #FFFFF0;
+    text-align: center;
+    padding: 1em 0;
+}

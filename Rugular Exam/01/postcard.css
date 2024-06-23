@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 "Gochi Hand", sans-serif;
+}
+
+h2 {
+    font: inherit;
+}
+
+body {
+    padding: 2em;
+    background: #E0E0E0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+p {
+    color: #666666;
+}
+
+h2 {
+    color: #333333;
+    font-size: 1.5em;
+}
+
+article {
+    background: #FFFFFF;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    max-width: 71em;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    padding: 2em;
+}
+
+hgroup {
+    background: #F3F4F3;
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+    right: 2%;
+    margin: 0 2em;
+    border-radius: 0.5em;
+    text-align: center;
+    padding: 0 2em;
+}
+
+hgroup>h2 {
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+hgroup>p {
+    margin-bottom: 1.7em;
+}
+
+.reciever-info {
+    background: #F9F9F9;
+    border-top: 1px solid #CCCCCC;
+    padding: 3.2em 0 3.2em 3.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.reciever-info>h2 {
+    margin-bottom: 2.5em;
+}
