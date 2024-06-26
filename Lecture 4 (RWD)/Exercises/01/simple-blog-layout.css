@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    font: 16px/1.5 Lato, sans-serif;
+    background: #eee;
+}
+
+/* One method has me creating a responsive layout using flex grow, flex shrink and flex basis */
+
+.site {
+    background: #fff;
+    padding: 1em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site>* {
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 0.3em;
+    flex-grow: 1;
+}
+
+header,
+footer {
+    flex: 1 1 100%;
+}
+
+main {
+    flex: 1 1 600px;
+}
+
+aside {
+    flex: 1 0 200px;
+}
