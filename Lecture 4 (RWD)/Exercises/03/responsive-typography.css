@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body {
+    padding: 2em;
+}
+
+.site {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: inherit;
+    font-weight: bold;
+}
+
+
+h6 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 2.6em;
+}
+
+header>* {
+    margin-bottom: 1rem;
+}
+
+.site-content>* {
+    margin-bottom: 1.5em;
+}
+
+.site-content::before {
+    display: block;
+    content: '';
+    height: 2px;
+    background: #ccc;
+    margin-bottom: 1.5em;
+}
+
+.site-content::after {
+    display: block;
+    content: '';
+    height: 2px;
+    background: #ccc;
+    margin: 1.5em 0;
+}
+
+article>* {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 2em;
+}
+
+ul ul {
+    margin: 0.5em 0;
+}
+
+ol {
+    padding: 0 2em 0 2em;
+}
+
+table {
+    margin: 1.5em auto;
+    width: 100%;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+thead>tr {
+    text-align: left;
+    background: #ccc;
+}
+
+table,
+td,
+th {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 0.2em;
+}
+
+tbody>tr:nth-of-type(odd) {
+    background-color: #eee;
+}
+
+blockquote {
+    margin: 2em 1.5em;
+    padding: 0 1em;
+    line-height: 3em;
+    border-left: 2px solid #ccc;
+}
+
+blockquote>footer {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 1.5em;
+}
