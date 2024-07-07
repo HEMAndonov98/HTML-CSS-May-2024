@@ -1,0 +1,113 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px/1.5 Lato, sans-serif;
+    padding: 2em;
+    background: #eee;
+}
+
+
+/* Layout */
+
+.site {
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.site-content {
+    display: flex;
+    gap: 4em;
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+aside {
+    flex: 0 0 27%;
+}
+
+/* Article */
+
+article {
+    flex: 1 1 auto;
+    background: #fff;
+    border-radius: 0.3em;
+    padding: 1em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 1 1 auto;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content>p:first-of-type {
+    color: #ccc;
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+}
+
+/* Green dot */
+
+figure {
+    align-self: center;
+    background: green;
+    height: 10em;
+    aspect-ratio: 1/1;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+img {
+    display: none;
+}
+
+i {
+    font-size: 4em;
+}
+
+main .inner {
+    display: flex;
+    gap: 1em;
+}
+
+aside>article {
+    height: 100%;
+}
+
+aside .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+aside .content {
+    flex-grow: 0;
+    gap: 1em;
+}
+
+aside figure {
+    align-self: flex-start;
+    height: 7em;
+}
