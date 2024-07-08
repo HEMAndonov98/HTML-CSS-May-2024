@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2,
+h4 {
+    font: inherit;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: #ccc;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none outside;
+}
+
+ul li {
+    position: relative;
+    display: block;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* typography */
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body {
+    padding: 2em;
+    background: #eee;
+}
+
+.site {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    gap: 1.5em;
+    background: #fff;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
+.banner-inner h2 {
+    margin-bottom: 0.5em;
+}
+
+.banner-inner>p {
+    margin-bottom: 2em;
+}
+
+.banner-bttns {
+    display: flex;
+    gap: 2em;
+}
+
+.banner-bttns a {
+    background: #eee;
+    padding: 0.75em 1.25em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+.banner-bttns a:hover,
+.banner-bttns #active {
+    background: purple;
+    color: #fff;
+}
+
+/* banner component */
+
+
+.banner-inner {
+    flex: 1 1 60%;
+}
+
+.media {
+    flex: 1 1 auto;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+.media img {
+    height: 100%;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+/* responsive */
+
+@media (max-width: 799px) {
+    .banner {
+        height: 70vh;
+        flex-direction: column;
+    }
+
+    .banner-inner {
+        flex: 0 1 auto;
+    }
+
+    .media {
+        flex: 0 1 50%;
+        display: flex;
+    }
+
+}
