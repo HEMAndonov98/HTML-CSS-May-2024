@@ -2,7 +2,7 @@
 layout: page
 title: Contacts
 description: If you wish to collaborate you can reach out through the methods I've given below
-background: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+background: "/images/Crumpled Yellow Papers.jpg"
 ---
 
 <form name="sentMessage" id="contactForm" novalidate>
