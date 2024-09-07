@@ -1,0 +1,52 @@
+---
+layout: page
+title: Posts
+background: https://images.unsplash.com/photo-1509390167458-99248fb59fdd?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+---
+
+{% for post in site.posts %}
+
+<article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <h2 class="post-title">{{ post.title }}</h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+        {% else %}
+        <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted by
+        {% if post.author %}
+        {{ post.author }}
+        {% else %}
+        {{ site.author }}
+        {% endif %}
+        on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
+    </p>
+</article>
+
+<hr>
+
+{% endfor %}
+
+<!-- Pager -->
+
+{% if site.total_pages > 1 %}
+
+<div class="clearfix">
+
+    {% if site.previous_page %}
+    <a class="btn btn-primary float-left"
+        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
+        Newer<span class="d-none d-md-inline"> Posts</span></a>
+    {% endif %}
+
+    {% if site.next_page %}
+    <a class="btn btn-primary float-right"
+        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older<span
+            class="d-none d-md-inline"> Posts</span> &rarr;</a>
+    {% endif %}
+
+</div>
+
+{% endif %}
