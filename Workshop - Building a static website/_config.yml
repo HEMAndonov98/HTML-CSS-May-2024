@@ -18,18 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: HTML & CSS Workshop
+title: Hristo's Dev Adventures
 email: hristo.andonov98@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
     This is my personal workshop page which is hosted on cloudflare
-    for the SoftUni 2024 HTML&CSS course. I love learning new things hooray.
+    for the SoftUni 2024 HTML&CSS course. 
+    My plan for this static website is to document my journey as a software developer
+    showcase any projets I'm proud of and maybe help someone out who is just starting out.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: HEMAndonov98
 
 # Build settings
-theme: minima
+theme: jekyll-theme-clean-blog
 plugins:
     - jekyll-feed
 # Exclude from processing.
