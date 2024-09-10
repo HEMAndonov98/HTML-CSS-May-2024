@@ -1,38 +1,57 @@
 <div class="card-footer bg-dark text-center mt-auto rounded">
     <div class="row">
-        <ul class="d-flex justify-content-center gap-5 mt-3">
+        <ul class="d-flex justify-content-center gap-3 mt-3">
+            <!-- If email is set in config create list item with icon for easy mailing -->
+            {% if site.email %}
             <li>
-                <a href="#">
+                <a href="mailto:{{ site.email | encode_email }}">
                     <span class="fa-stack fa-lg">
                         <i class="fa-regular fa-circle fa-stack-2x" style="color: #fbfcfe;"></i>
                         <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
             </li>
+            {% endif %}
+            {% if site.linkedin_username %}
             <li>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
                     <span class="fa-stack fa-lg">
                         <i class="fa-regular fa-circle fa-stack-2x" style="color: #fbfcfe;"></i>
                         <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
             </li>
+            {% endif %}
+            {% if site.instagram_username %}
             <li>
-                <a href="#">
+                <a href="https://instagram.com/{{ site.instagram_username }}">
                     <span class="fa-stack fa-lg">
                         <i class="fa-regular fa-circle fa-stack-2x" style="color: #fbfcfe;"></i>
                         <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
             </li>
+            {% endif %}
+            {% if site.facebook_username %}
             <li>
-                <a href="#">
+                <a href="https://www.facebook.com/{{ site.facebook_username }}">
                     <span class="fa-stack fa-lg">
                         <i class="fa-regular fa-circle fa-stack-2x" style="color: #fbfcfe;"></i>
                         <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
             </li>
+            {% endif %}
+            {% if site.github_username %}
+            <li>
+                <a href="https://github.com/{{ site.github_username }}">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa-regular fa-circle fa-stack-2x" style="color: #fbfcfe;"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            {% endif %}
         </ul>
         <p class="copyright text-muted mt-2">Copyright &copy; Hristo Andonov 2024 </p>
     </div>
