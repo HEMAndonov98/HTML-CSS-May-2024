@@ -1,0 +1,50 @@
+<div id="carouselWithCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselWithCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselWithCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        {% for post in site.posts | first: 3 %}
+        {% if forloop.first %}
+        <!-- add inline css to css file -->
+        <div class="carousel-item active carousel-item" style="height: 30em;">
+            <a href="{{ post.url }}">
+                <!-- placeholder src will replace with post background banner img src  -->
+                <img src="https://images.unsplash.com/photo-1725610588086-b9e38da987f7?q=80&w=3246&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="..." class="carousel-image"
+                    style="height: 100%; width: 100%; object-fit: cover; filter: brightness(0.6);">
+                <div class="carousel-caption top-0 mt-5 d-none d-sm-block">
+                    <p class="mt-5 fs-3 text-uppercase">{{ post.description }}</p>
+                    <h5 class="display-1 fw-bolder text-capitalize">{{ post.title }}</h5>
+                </div>
+            </a>
+        </div>
+        {% else %}
+        <div class="carousel-item carousel-item" style="height: 30em;">
+            <a href="{{ post.url }}">
+                <!-- placeholder src will replace with post background banner img src  -->
+                <img src="https://images.unsplash.com/photo-1725610588086-b9e38da987f7?q=80&w=3246&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="..." class="carousel-image"
+                    style="height: 100%; width: 100%; object-fit: cover; filter: brightness(0.6);">
+                <div class="carousel-caption top-0 mt-5 d-none d-sm-block">
+                    <p class="mt-5 fs-3 text-uppercase">{{ post.description }}</p>
+                    <h5 class="display-1 fw-bolder text-capitalize">{{ post.title }}</h5>
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselWithCaptions" data-bs-slide="prev"
+        style="cursor: w-resize;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselWithCaptions" data-bs-slide="next"
+        style="cursor: e-resize;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
