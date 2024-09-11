@@ -1,0 +1,28 @@
+html {
+    font: 16px/1.5 'JetBrains Mono', Lato, sans-serif;
+}
+
+h1 {
+    font-size: 3.6em;
+    margin-bottom: 1em;
+}
+h2 {
+    font-size: 3.2em;
+    margin-bottom: 0.8em;
+}
+h3 {
+    font-size: 2.4em;
+    margin-bottom: 0.6em;
+}
+h4 {
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+h5 {
+    font-size: 1.6em;
+    margin-bottom: 0.2em;
+}
+h6 {
+    font-size: 1.2em;
+    margin-bottom: 0.1em;
+}

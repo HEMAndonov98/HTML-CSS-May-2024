@@ -1,0 +1,107 @@
+/* navigation */
+
+/* I dont know why this transition creates the cool effect when hovering over the links but i'll take it */
+.nav-link,
+.navbar-brand {
+    transition: text-underline-offset, .5s ,padding-top .5s, font-site 1s;
+}
+
+.nav-link:hover,
+.navbar-brand:hover,
+.active {
+    padding-top: 0;
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+}
+
+.nav-link:hover {
+    font-size: 1.3em;
+}
+
+
+/* article */
+
+article {
+    max-width: 65em;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 2em;
+}
+
+article a h2,
+article a h3 {
+    padding-bottom: 0.1em;
+    position: relative;
+}
+
+article a h2 {
+    font-weight: bold;
+}
+
+article a h3 {
+    font-style: italic;
+}
+
+article a h2::after {
+    content: '';
+    height: 0.1em;
+    width: 0;
+    background: darkblue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0.3em;
+    transition: width 0.8s;
+}
+
+article:hover a h2::after {
+    width: 100%;
+}
+
+.clearfix {
+    width: 100%;
+}
+
+.clearfix>a {
+    margin-left: auto;
+    width: 15em;
+    display: block;
+}
+
+.clearfix>a:hover {
+    background: inherit;
+    color: #6c757d;
+    border: none;
+}
+
+.clearfix>a::after {
+    content: '->';
+    margin-left: 0.2em;
+    transition: margin-left 0.5s;
+}
+
+.clearfix>a:hover::after {
+    margin-left: 1.2em;
+}
+
+/* code block may remove later */
+
+pre {
+    background: #2b2b2b;
+    padding: 1em;
+    margin: 0.5em auto;
+    overflow: auto;
+    border-radius: 0.3em;
+}
+
+
+pre code {
+    color: #f8f8f2;
+    padding-left: 0;
+    border: none;
+    overflow-x: initial;
+    display: block;
+    font-family: inherit;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
