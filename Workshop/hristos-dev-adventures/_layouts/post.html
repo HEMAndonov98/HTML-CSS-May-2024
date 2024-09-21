@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% if page.background %}
+<header class="post-header">
+    <div class="banner-inner">
+        <img class="img-fluid" src="{{ page.background | prepend: site.baseurl }}" alt="">
+        <h2>{{ page.title }}</h2>
+    </div>
+</header>
+{% else%}
+<header class="post-header no-background-header">
+    <h2 class="title-no-background">{{ page.title }}</h2>
+</header>{% endif %}
+
+
+<main class="content-main">
+    {{ content }}
+</main>
