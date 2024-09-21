@@ -18,7 +18,6 @@
     font-size: 1.3em;
 }
 
-
 /* article */
 
 article {
@@ -84,12 +83,103 @@ article:hover a h2::after {
     margin-left: 1.2em;
 }
 
+/* post */
+
+.post-header {
+    margin-bottom: 2em;
+}
+
+.banner-inner {
+    max-height: 45em;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-inner>img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    filter: brightness(0.6);
+}
+
+.no-background-header > h2 {
+    text-align: center;
+    padding: 3em 0;
+    margin-top: 0.5em;
+    background: #eee;
+    font-weight: bold;
+}
+
+.banner-inner>h2 {
+   text-align: center;
+   position: absolute; 
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #fff;
+   font-weight: bold;
+}
+
+.content-main {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.content-main p {
+    margin-bottom: 1em;
+}
+
+.content-main ul {
+    list-style: circle;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.content-main ul li {
+        transition: padding-left 0.5s ease;
+        padding-right: 1em;
+}
+
+.content-main ul li:not(li:last-of-type) {
+    margin-bottom: 0.7em;
+}
+
+.content-main>ul li:hover {
+    padding-left: 1em;
+    background: #eee;
+    border-radius: 0.5em;
+    position: relative;
+}
+
+.content-main>ul li:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    background: black;
+}
+
+.content-main a{
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+    display: inline;
+}
+
+.content-main a:hover {
+    color: palevioletred;
+}
 /* code block may remove later */
 
 pre {
     background: #2b2b2b;
     padding: 1em;
-    margin: 0.5em auto;
+    margin: 1.2em auto;
     overflow: auto;
     border-radius: 0.3em;
 }
@@ -105,3 +195,4 @@ pre code {
     overflow-wrap: break-word;
     white-space: pre-wrap;
 }
+
