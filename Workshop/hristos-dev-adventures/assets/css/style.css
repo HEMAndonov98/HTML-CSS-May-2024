@@ -1,3 +1,10 @@
+body {
+    background: #FFFAF0;
+}
+
+/* FFFAF0 */
+/* F8F9FA */
+
 /* navigation */
 
 /* I dont know why this transition creates the cool effect when hovering over the links but i'll take it */
@@ -27,6 +34,10 @@ article {
     padding: 2em;
 }
 
+article a:hover {
+    color: slategray
+}
+
 article a h2,
 article a h3 {
     padding-bottom: 0.1em;
@@ -45,7 +56,7 @@ article a h2::after {
     content: '';
     height: 0.1em;
     width: 0;
-    background: darkblue;
+    background: lightslategray;
     position: absolute;
     bottom: 0;
     left: 0;
