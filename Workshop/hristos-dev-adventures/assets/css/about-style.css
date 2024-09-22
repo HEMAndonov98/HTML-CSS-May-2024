@@ -1,0 +1,15 @@
+/* profile avatar */
+
+.profile-icon-container {
+    display: inline-block;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    border: 0.2em solid lightgray;
+}
+
+.profile-icon-container>img {
+    height: auto;
+    width: 100%;
+}
