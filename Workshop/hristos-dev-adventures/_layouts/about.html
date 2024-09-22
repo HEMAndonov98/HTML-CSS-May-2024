@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<header class="bg-secondary p-2">
+    <div class="profile-container d-flex justify-content-center gap-2 m-2">
+        <div class="author-details d-flex flex-column justify-content-center">
+            <h2 class="author-name mb-1 fw-bold text-secondary-emphasis ">{{ site.author }}</h2>
+            <p class="author-position fst-italic fs-5 text-light">Aspiring fullstack developer</p>
+        </div>
+        <div class="profile-icon-container d-flex">
+            <img src="/assets/static-images/IMG_3321.jpeg" alt="picture of the author" class="profile-icon d-block">
+        </div>
+    </div>
+</header>
+
+<main class="about-me-desc content-main mt-2 p-2">
+    {{ content }}
+</main>
