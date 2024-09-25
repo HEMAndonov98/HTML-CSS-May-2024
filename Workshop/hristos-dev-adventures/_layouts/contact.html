@@ -1,16 +1,17 @@
 ---
 layout: default
 ---
-<div class="contact-form-container p-4 mt-2 d-flex flex-column flex-grow-1 justify-content-center">
+<div class="contact-form-container p-4 mt-2 d-flex flex-column justify-content-center flex-grow-1">
     <h3 class="mb-4 ">Reach out to me</h3>
     <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
         <input type="hidden" name="access_key" value="c2f5da46-1546-4e27-8788-c830c150f82c">
 
 
-        <div class=" mb-3 align-self-start">
+        <div id="email-inputDiv" class="mb-3t">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com"
+                onchange="validate(this.value)">
         </div>
         <div class="mt-3 mb-3">
             <label for="message" class="form-label">Example textarea</label>
@@ -18,44 +19,31 @@ layout: default
         </div>
 
         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-        <input class="btn btn-outline-secondary" type="submit" value="Send">
+        <input id="form-submit-button" class="btn btn-outline-secondary" type="submit" value="Send">
     </form>
 </div>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 <script>
-    const constraints = {
-        name: {
-            presence: { allowEmpty: false }
-        },
-        email: {
-            presence: { allowEmpty: false },
-            email: true
-        },
-        message: {
-            presence: { allowEmpty: false }
+    const submitBttn = document.getElementById('form-submit-button');
+    const emailInputDiv = document.getElementById('email-inputDiv');
+    const pattern = /^[\w\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+
+    const invalidEmailMessage = document.createElement('p');
+    invalidEmailMessage.textContent = "Invalid Email!!!"
+    invalidEmailMessage.classList.add('mt-2', 'p-2');
+
+    function validate(email) {
+        const result = pattern.test(email);
+
+        if (!result) {
+            submitBttn.setAttribute('disabled', true);
+            emailInputDiv.classList.add('alert', 'alert-danger');
+            emailInputDiv.appendChild(invalidEmailMessage);
+
+        } else {
+            submitBttn.removeAttribute('disabled');
+            emailInputDiv.classList.remove('alert', 'alert-danger');
+            emailInputDiv.removeChild(emailInputDiv.lastChild);
         }
-    };
-
-    const form = document.getElementById('contact-form');
-
-    form.addEventListener('submit', function (event) {
-        const formValues = {
-            name: form.elements.name.value,
-            email: form.elements.email.value,
-            message: form.elements.message.value
-        };
-
-        const errors = validate(formValues, constraints);
-
-        if (errors) {
-            event.preventDefault();
-            const errorMessage = Object
-                .values(errors)
-                .map(function (fieldValues) { return fieldValues.join(', ') })
-                .join("\n");
-
-            alert(errorMessage);
-        }
-    }, false);
+    }
 </script>
