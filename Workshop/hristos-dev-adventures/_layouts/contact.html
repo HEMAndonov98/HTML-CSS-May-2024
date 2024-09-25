@@ -3,8 +3,12 @@ layout: default
 ---
 <div class="contact-form-container p-4 mt-2 d-flex flex-column flex-grow-1 justify-content-center">
     <h3 class="mb-4 ">Reach out to me</h3>
-    <form action="">
-        <div class="mb-3 align-self-start">
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="c2f5da46-1546-4e27-8788-c830c150f82c">
+
+
+        <div class=" mb-3 align-self-start">
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
         </div>
@@ -13,6 +17,45 @@ layout: default
             <textarea class="form-control" id="message" name="message" rows="3"></textarea>
         </div>
 
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         <input class="btn btn-outline-secondary" type="submit" value="Send">
     </form>
 </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+<script>
+    const constraints = {
+        name: {
+            presence: { allowEmpty: false }
+        },
+        email: {
+            presence: { allowEmpty: false },
+            email: true
+        },
+        message: {
+            presence: { allowEmpty: false }
+        }
+    };
+
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function (event) {
+        const formValues = {
+            name: form.elements.name.value,
+            email: form.elements.email.value,
+            message: form.elements.message.value
+        };
+
+        const errors = validate(formValues, constraints);
+
+        if (errors) {
+            event.preventDefault();
+            const errorMessage = Object
+                .values(errors)
+                .map(function (fieldValues) { return fieldValues.join(', ') })
+                .join("\n");
+
+            alert(errorMessage);
+        }
+    }, false);
+</script>
