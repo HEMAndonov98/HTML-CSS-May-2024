@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<header class="bg-secondary p-2">
+<header class="bg-secondary p-2 d-flex justify-content-center align-items-center" id="about-me-header">
     <div class="profile-container d-flex justify-content-center gap-2 m-2">
         <div class="author-details d-flex flex-column justify-content-center">
             <h2 class="author-name mb-1 fw-bold text-secondary-emphasis ">{{ site.author }}</h2>
             <p class="author-position fst-italic fs-5 text-light">Aspiring fullstack developer</p>
         </div>
-        <div class="profile-icon-container d-flex .d-none .d-sm-block">
+        <div class="profile-icon-container d-none d-sm-block">
             <img src="{{ '/assets/static-images/IMG_3321.jpeg' | relative_url }}" alt="picture of the author"
                 class="profile-icon d-block">
         </div>

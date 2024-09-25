@@ -1,10 +1,14 @@
+#about-me-header {
+    min-height: 20em;
+}
+
 /* profile avatar */
 
 .profile-icon-container {
     display: inline-block;
     border-radius: 50%;
     width: 10em;
-    height: 10em;
+    aspect-ratio: 1/1;
     overflow: hidden;
     border: 0.2em solid lightgray;
 }

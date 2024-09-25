@@ -10,8 +10,9 @@
         {% if forloop.first %}
         <!-- add inline css to css file -->
         <div class="carousel-item active carousel-item">
-            <a href="{{ post.url }}" style="max-height: 45em; min-width: 25em;">
+            <a href="{{ post.url }}" style="max-height: 45em; min-height: 25em;">
                 <!-- placeholder src will replace with post background banner img src  -->
+                <!-- To fix carousel on mobile add display flex on carousel item but only for screens smaller than 700px widrh -->
                 {% if post.background%}
                 <img src="{{ post.background | prepend: site.baseurl }}" alt="..." class="carousel-image" style="
                     height: 100%; width: 100%; object-fit: cover; filter: brightness(0.6);
@@ -31,7 +32,7 @@
         </div>
         {% else %}
         <div class="carousel-item carousel-item">
-            <a href="{{ post.url }}" style="max-height: 45em; min-width: 25em;">
+            <a href="{{ post.url }}" style="max-height: 45em; min-height: 25em;">
                 <!-- placeholder src will replace with post background banner img src  -->
                 {% if post.background%}
                 <img src=" {{ post.background | prepend: site.baseurl }}" alt="..." class="carousel-image" style="
