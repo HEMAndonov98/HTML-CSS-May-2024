@@ -33,6 +33,7 @@ github_username: HEMAndonov98
 linkedin_username: hristo-e-andonov
 instagram_username: nottherealhristo
 paginate: 5
+paginate_path: "/blog/page:num/"
 
 # Build settings
 theme: minima
