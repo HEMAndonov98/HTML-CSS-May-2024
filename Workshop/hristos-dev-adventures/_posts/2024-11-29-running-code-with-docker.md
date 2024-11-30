@@ -135,4 +135,4 @@ which will do these things:
 
 You've successfuly packaged your first web app and run it as a container using Docker now you can go to (https://localhost:8080) and see your web app running.
 
-This is the first step in the world of Docker and contaieners and shows just how powerful a tool like Docker can be to us developers, happy coding devs...
+This is the first step in the world of Docker and contaieners and shows just how powerful a tool like Docker can be to us developers, happy coding devs.
