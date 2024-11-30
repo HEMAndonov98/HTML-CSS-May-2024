@@ -14,8 +14,7 @@
                 <!-- placeholder src will replace with post background banner img src  -->
                 <!-- To fix carousel on mobile add display flex on carousel item but only for screens smaller than 700px widrh -->
                 {% if post.background%}
-                <img src="{{ post.background | prepend: site.baseurl }}" alt="..."
-                    class="carousel-image .d-none .d-sm-block" style="
+                <img src="{{ post.background | prepend: site.baseurl }}" alt="..." class="carousel-image" style="
                     height: 100%; width: 100%; object-fit: cover; filter: brightness(0.6);
                     ">
                 <div class=" carousel-caption top-0 mt-5  ">
